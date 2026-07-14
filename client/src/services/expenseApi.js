@@ -20,4 +20,6 @@ export const updateExpense = (id, expenseData) =>
 export const deleteExpense = (id) =>
     expenseApi.delete(`/expenses/${id}`);
 
+console.log("API URL:", import.meta.env.VITE_API_URL);
+
 export default expenseApi;
